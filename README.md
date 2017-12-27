@@ -35,16 +35,6 @@ This template uses:
 * **Cordova:** _7.0.0_
 * **Node.js:** _8.0.0_ (Supports ES6)
 
-## WARNING (For Linux and Mac OS users):
-
-For live-reload i can't find easy way to do fixed version of this. But you can develop your app with this way:
-
-1. `cordova platform add ios browser` (browser needs for development in live-reload mode.)
-2. `cordova run ios -- --lr` (wait till app opens in your ios emulator or phone. it will close console output after publish, so live-reload will not work. don't close the app and go to next step.)
-3. `cordova run browser -- --lr` (you can use live-reload in your phone-emulator and browser at same time. you can edit your files in live-reload mode now.)
-
----
-
 ## Features
 
 Hooks are smart. They can fix some problems for you. Fix list:
@@ -62,9 +52,12 @@ Hooks are smart. They can fix some problems for you. Fix list:
 * `CordovaDeviceRouter.js` In live-reload mode, you can connect to server from multiple devices. This file inject right `cordova.js` file to page. So you can connect to webpack-dev-server from multiple devices at same time.
 
 ## Installation
-### IMPORTANT: Phonegap build tools not supported currently. I suggest to use cordova with this template.
 
-This template need cordova or phonegap, for more information [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
+This template need cordova or phonegap, 
+```
+npm install -g phonegap
+```
+for more information [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
 
 Our Magic words:
 
@@ -93,12 +86,13 @@ phonegap run ios -- --lr
 ```
 
 And :tada: that's all folks! Check your app in web browser http://localhost:8080
+
+## build
 ```
-# build
 phonegap build --release
-# the build outputs (.js, .css) are in /www directory
-# make sure updating your index.html to correctly refer to these outputs.
 ```
+The build outputs (.js, .css) are in /www directory
+Make sure updating your index.html to correctly refer to these outputs.
 
 You can check:
 * [hookers.js](template_src/hooks/hookers.js),
