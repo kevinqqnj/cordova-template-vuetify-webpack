@@ -1,0 +1,27 @@
+{
+  "name": "cordova-template-vuetify-webpack",
+  "version": "1.2.1",
+  "description": "Cordova template with Vuetify.js and webpack 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Err: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinqqnj/cordova-template-vuetify-webpack.git"
+  },
+  "homepage": "https://github.com/kevinqqnj/cordova-template-vuetify-webpack",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template",
+    "cordova-template",
+    "template",
+    "webpack",
+    "vue.js",
+    "vue"
+  ],
+  "author": "Kevin ZHANG",
+  "license": "Apache-2.0"
+}
