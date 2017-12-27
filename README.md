@@ -84,12 +84,21 @@ You just have one more command option: `-- --lr`. It starts live reload.
 
 Example usage:
 ```
+cd <project_create_dir>
+npm i
+phonegap platform add browser
 cordova run android -- --lr
 cordova run browser -- --live-reload
 phonegap run ios -- --lr
 ```
 
-And :tada: that's all folks!
+And :tada: that's all folks! Check your app in web browser http://localhost:8080
+```
+# build
+phonegap build --release
+# the build outputs (.js, .css) are in /www directory
+# make sure updating your index.html to correctly refer to these outputs.
+```
 
 You can check:
 * [hookers.js](template_src/hooks/hookers.js),
