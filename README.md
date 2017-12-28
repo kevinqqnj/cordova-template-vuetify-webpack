@@ -85,7 +85,7 @@ cordova run browser -- --live-reload
 phonegap run ios -- --lr
 ```
 
-And your first App is ready! Check your App in web browser http://localhost:8080 .
+And your first App is ready! Check your App in web browser http://localhost:8000 or http://localhost:8081.
 
 ## build
 ```
