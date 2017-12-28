@@ -2,14 +2,12 @@
     <v-app>
         <v-navigation-drawer fixed :mini-variant="miniVariant" :clipped="clipped" v-model="drawer" app>
             <v-list>
-                <v-list-tile value="true" v-for="(item, i) in items" :key="i">
+                <v-list-tile value="true" v-for="(item, i) in items" :key="i" @click="linkto(item.linkpath)">
                     <v-list-tile-action>
                         <v-icon v-html="item.icon"></v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                        <v-list-tile-title>
-                            <router-link :to="item.link">{{ item.title }}</router-link>
-                        </v-list-tile-title>
+                        <v-list-tile-title>{{ item.title }}</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
             </v-list>
@@ -56,20 +54,20 @@ export default {
             clipped: false,
             drawer: true,
             fixed: false,
-            items: [{
-                icon: 'home',
-                title: 'Home',
-                link: '/'
-            }, {
-                icon: 'star',
-                title: 'Hello Vue',
-                link: '/helloworld'
-            }],
+            items: [
+                { icon: 'home', title: 'Home', linkpath: '/' },
+                { icon: 'star', title: 'Hello Vue', linkpath: '/helloworld' },
+            ],
             miniVariant: false,
             right: true,
             rightDrawer: false,
             title: 'Vuetify.js'
         }
+    },
+    methods: {
+        linkto(pathname) {
+            this.$router.push({ path: pathname })
+        },
     }
 }
 
