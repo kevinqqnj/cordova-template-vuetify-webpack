@@ -21,7 +21,7 @@
 
 ![template logo](logo.png "template logo")
 
-# Vuetify.js - Webpack Cordova Template
+# Vuetify - Webpack Cordova Template
 You can start your new cordova project perfectly with this template.
 
 This template uses:
@@ -29,7 +29,7 @@ This template uses:
 * [Vue Js 2](https://vuejs.org/)
 * [Webpack 2](https://webpack.github.io/)
 
-#### Thanks to: centrual [cordova-template-framework7-vue-webpack](https://github.com/centrual/cordova-template-framework7-vue-webpack)
+**Thanks to: centrual [cordova-template-framework7-vue-webpack](https://github.com/centrual/cordova-template-framework7-vue-webpack)**
 
 ## Minimum Requirements
 * **Cordova:** _7.0.0_
@@ -57,7 +57,7 @@ This template need cordova or phonegap,
 ```
 npm install -g phonegap
 ```
-for more information [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
+for more information, please check [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
 
 Our Magic words:
 
@@ -66,14 +66,14 @@ cordova create <project_create_dir> [com.example.projectname] [ProjectClassName]
 phonegap create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vuetify-webpack
 ```
 
-boom! :boom: you have your brand new cordova / phonegap project with Vuetify.js, Vue 2 and webpack 2!
+Now you have your brand new cordova / phonegap project with Vuetify, Vue 2 and webpack 2!
 
 ---
 
 ## Usage
 
 You can use every cordova | phonegap commands.
-You just have one more command option: `-- --lr`. It starts live reload.
+You just have one more command option: `-- --lr` to start live reload.
 
 Example usage:
 ```
@@ -85,14 +85,14 @@ cordova run browser -- --live-reload
 phonegap run ios -- --lr
 ```
 
-And :tada: that's all folks! Check your app in web browser http://localhost:8080
+And your first App is ready! Check your App in web browser http://localhost:8080 .
 
 ## build
 ```
 phonegap build --release
 ```
-The build outputs (.js, .css) are in /www directory
-Make sure updating your index.html to correctly refer to these outputs.
+The build outputs (.js, .css) are in /www directory.
+If you're using other Web Framework (Django, Flask, etc.), make sure to update their index.html to correctly refer these outputs.
 
 You can check:
 * [hookers.js](template_src/hooks/hookers.js),
