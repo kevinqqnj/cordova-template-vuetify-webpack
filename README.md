@@ -62,8 +62,9 @@ for more information, please check [cordova installation](https://cordova.apache
 Our Magic words:
 
 ``` bash
-cordova create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vuetify-webpack
 phonegap create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vuetify-webpack
+# or
+cordova create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vuetify-webpack
 ```
 
 Now you have your brand new cordova / phonegap project with Vuetify, Vue 2 and webpack 2!
@@ -80,9 +81,9 @@ Example usage:
 cd <project_create_dir>
 npm i
 phonegap platform add browser
+phonegap run browser -- --lr
+cordova platform add android
 cordova run android -- --lr
-cordova run browser -- --live-reload
-phonegap run ios -- --lr
 ```
 
 And your first App is ready! Check your App in web browser http://localhost:8000 or http://localhost:8081.
