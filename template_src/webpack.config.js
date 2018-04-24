@@ -106,7 +106,8 @@ let config = function (env) {
       }
       returner.plugins.push(new webpack.NamedModulesPlugin())
     } else if (typeof env.release !== 'undefined' && env.release) {
-      returner.plugins.push(new CleanPlugin("www", {
+      returner.plugins.push(new CleanPlugin(
+        ['www/*.js', 'www/*.css'], {
         root: path.join(__dirname, "."),
         dry: false,
         verbose: false,
